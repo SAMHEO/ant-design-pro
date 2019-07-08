@@ -113,7 +113,7 @@
     "jest-puppeteer": "^4.2.0",
     "jsdom-global": "^3.0.2",
     "less": "^3.9.0",
-    "lint-staged": "^8.1.7",
+    "lint-staged": "^9.1.0",
     "mockjs": "^1.0.1-beta3",
     "netlify-lambda": "^1.4.13",
     "node-fetch": "^2.6.0",
