@@ -32,7 +32,9 @@
     "test": "umi test",
     "test:all": "node ./tests/run-tests.js",
     "test:component": "umi test ./src/components",
-    "tslint:fix": "tslint --fix \"src/**/*.ts*\""
+    "tslint:fix": "tslint --fix \"src/**/*.ts*\"",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -75,11 +77,12 @@
     "react-dom": "^16.8.6",
     "react-media": "^1.9.2",
     "react-media-hook2": "^1.0.5",
-    "umi": "^2.7.2",
+    "umi": "^3.0.0",
     "umi-plugin-ga": "^1.1.3",
     "umi-plugin-pro-block": "^1.3.2",
     "umi-plugin-react": "^1.8.2",
-    "umi-request": "^1.0.7"
+    "umi-request": "^1.0.7",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.7",
@@ -173,5 +176,6 @@
       "docker",
       "create-umi"
     ]
-  }
+  },
+  "snyk": true
 }
